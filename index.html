@@ -26,13 +26,13 @@ img{max-width:100%; display:block}
 
 /* Nav */
 header.site{position:sticky; top:0; z-index:20; background:var(--white); border-bottom:3px solid var(--charcoal)}
-.nav-row{display:flex; align-items:center; justify-content:space-between; gap:var(--sp-4); padding-block:16px}
+.nav-row{display:flex; align-items:center; justify-content:space-between; gap:var(--sp-4); padding-block:12px}
 .brand{display:flex; align-items:center; gap:14px; text-decoration:none; min-width:0}
-.brand img{height:42px; width:auto}
+.brand img{height:38px; width:auto}
 .brand-word{font-family:"Anton",sans-serif; font-size:1.2rem; letter-spacing:0.02em; white-space:nowrap}
 .brand-word .lions{color:var(--maroon-600)}
-nav.links{display:flex; gap:var(--sp-5); flex-wrap:wrap}
-nav.links a{font-size:0.85rem; text-transform:uppercase; letter-spacing:0.07em; font-weight:700; text-decoration:none; color:var(--ink); position:relative; padding-bottom:4px}
+nav.links{display:flex; gap:28px; flex-wrap:nowrap}
+nav.links a{font-size:0.8rem; white-space:nowrap; text-transform:uppercase; letter-spacing:0.07em; font-weight:700; text-decoration:none; color:var(--ink); position:relative; padding-bottom:4px}
 nav.links a::after{content:""; position:absolute; left:0; right:100%; bottom:0; height:3px; background:var(--yellow-500); transition:right .18s ease}
 nav.links a:hover::after, nav.links a:focus-visible::after{right:0}
 nav.links a:focus-visible{outline:2px solid var(--maroon-600); outline-offset:3px}
@@ -61,7 +61,7 @@ nav.links a:focus-visible{outline:2px solid var(--maroon-600); outline-offset:3p
 /* Shared type */
 .eyebrow{font-size:0.8rem; text-transform:uppercase; letter-spacing:0.16em; font-weight:800; color:var(--maroon-600); margin-bottom:var(--sp-3)}
 .eyebrow-light{color:var(--yellow-500)}
-.rule{width:72px; height:5px; background:var(--yellow-500); margin-block:var(--sp-4)}
+.rule{width:64px; height:5px; background:var(--yellow-500); margin-block:20px}
 
 /* Rounded modules (inset panels) */
 .module{border-radius:var(--r-module); margin-inline:clamp(12px,3vw,32px)}
@@ -75,36 +75,36 @@ nav.links a:focus-visible{outline:2px solid var(--maroon-600); outline-offset:3p
 .framed .media.tilt-r{transform:rotate(1.4deg)}
 
 /* Hero */
-.hero{padding-block:clamp(56px,8vw,104px) clamp(48px,6vw,80px)}
-.hero-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(460px,100%),1fr)); gap:clamp(32px,6vw,80px); align-items:center}
-.hero h1{font-size:clamp(2.75rem,6.4vw,4.9rem)}
+.hero{padding-block:clamp(40px,5vw,72px) clamp(40px,5vw,64px)}
+.hero-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(440px,100%),1fr)); gap:clamp(32px,5vw,64px); align-items:center}
+.hero h1{font-size:clamp(2.4rem,4.2vw,3.6rem)}
 .hero h1 .accent{color:var(--maroon-600)}
-.hero p.lead{font-size:1.15rem; font-weight:500; max-width:46ch; margin-bottom:var(--sp-5)}
+.hero p.lead{font-size:1.05rem; font-weight:500; max-width:46ch; margin-bottom:var(--sp-4)}
 .cta-row{display:flex; gap:var(--sp-3); flex-wrap:wrap}
 .hero .media img{aspect-ratio:4/3}
 
 /* Stats */
 .stats{background:var(--maroon-600); color:#FFFFFF}
-.stats .wrap{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(200px,100%),1fr)); gap:var(--sp-4); padding-block:var(--sp-6)}
+.stats .wrap{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(200px,100%),1fr)); gap:var(--sp-4); padding-block:var(--sp-5)}
 .stat{border-left:1px solid rgba(255,255,255,0.25); padding-left:var(--sp-4)}
 .stat:first-child{border-left:none; padding-left:0}
-.stat b{display:block; font-family:"Anton",sans-serif; font-size:clamp(1.9rem,3.8vw,2.8rem); font-weight:400; line-height:1.05}
+.stat b{display:block; font-family:"Anton",sans-serif; font-size:clamp(1.7rem,2.8vw,2.3rem); font-weight:400; line-height:1.05}
 .stat span{display:block; margin-top:8px; font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--maroon-100)}
 
 /* Bands */
-section.band{padding-block:clamp(72px,9vw,120px)}
-.band-head{max-width:640px; margin-bottom:var(--sp-6)}
+section.band{padding-block:clamp(56px,6vw,88px)}
+.band-head{max-width:640px; margin-bottom:var(--sp-5)}
 .band-head .eyebrow{margin-bottom:var(--sp-2)}
-.band-head h2{font-size:clamp(2rem,4vw,2.9rem)}
-.module-pad{padding-block:clamp(56px,7vw,96px)}
+.band-head h2{font-size:clamp(1.8rem,3vw,2.5rem)}
+.module-pad{padding-block:clamp(40px,5vw,72px)}
 
 /* What is footy */
 .explain-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(260px,100%),1fr)); gap:var(--sp-4)}
 .explain-card{position:relative}
-.explain-card h3{font-size:1.45rem; margin-bottom:var(--sp-3)}
+.explain-card h3{font-size:1.3rem; margin-bottom:12px}
 .explain-card p{font-size:0.98rem}
 .cards-outline .explain-card{background:var(--white); border:2px solid var(--charcoal); border-radius:var(--r-card); padding:var(--sp-5)}
-.cards-charcoal .explain-card{background:var(--charcoal); border-radius:var(--r-card); padding:var(--sp-5)}
+.cards-charcoal .explain-card{background:var(--charcoal); border-radius:var(--r-card); padding:var(--sp-4) 28px 28px}
 .cards-charcoal .explain-card h3{color:#FFFFFF}
 .cards-charcoal .explain-card p{color:rgba(255,255,255,0.78)}
 .cards-rule .explain-card{border-top:5px solid var(--maroon-600); padding-top:var(--sp-4)}
@@ -112,8 +112,8 @@ section.band{padding-block:clamp(72px,9vw,120px)}
 
 /* Social */
 .social-band{background:var(--maroon-700); color:#FFFFFF}
-.split{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(380px,100%),1fr)); gap:clamp(32px,6vw,72px); align-items:center}
-.on-dark h2{color:#FFFFFF; font-size:clamp(2rem,4vw,2.9rem)}
+.split{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(380px,100%),1fr)); gap:clamp(32px,5vw,56px); align-items:center}
+.on-dark h2{color:#FFFFFF; font-size:clamp(1.8rem,3vw,2.5rem)}
 .on-dark p{color:var(--maroon-100)}
 .on-dark p + p{margin-top:var(--sp-3)}
 .badge{display:inline-block; background:var(--yellow-500); color:var(--charcoal); font-size:1.05rem; padding:6px 16px 8px; transform:rotate(-2deg); margin-bottom:var(--sp-4)}
@@ -121,17 +121,17 @@ section.band{padding-block:clamp(72px,9vw,120px)}
 
 /* Training & Games */
 .pitch-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(420px,100%),1fr)); gap:var(--sp-4)}
-.schedule-card{background:var(--charcoal); color:#FFFFFF; border-radius:var(--r-module); padding:var(--sp-5) clamp(24px,4vw,44px)}
-.card-label{display:block; font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:0.14em; margin:0 0 var(--sp-4)}
+.schedule-card{background:var(--charcoal); color:#FFFFFF; border-radius:var(--r-module); padding:var(--sp-4) clamp(24px,3vw,36px)}
+.card-label{display:block; font-size:0.74rem; font-weight:800; text-transform:uppercase; letter-spacing:0.14em; margin:0 0 var(--sp-3)}
 .schedule-card .card-label{color:var(--yellow-500)}
 .schedule-items{display:flex; flex-wrap:wrap; gap:var(--sp-4)}
 .schedule-item{flex:1 1 150px}
 .schedule-item b{display:block; font-size:0.74rem; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:var(--yellow-500); margin-bottom:var(--sp-2)}
-.schedule-item span{font-family:"Anton",sans-serif; font-size:1.35rem; text-transform:uppercase; letter-spacing:0.02em}
-.game-card{background:var(--white); border:2px solid var(--charcoal); border-radius:var(--r-module); padding:var(--sp-5) clamp(24px,4vw,44px)}
+.schedule-item span{font-family:"Anton",sans-serif; font-size:1.2rem; text-transform:uppercase; letter-spacing:0.02em}
+.game-card{background:var(--white); border:2px solid var(--charcoal); border-radius:var(--r-module); padding:var(--sp-4) clamp(24px,3vw,36px)}
 .game-card .card-label{color:var(--maroon-600)}
 .game-card .schedule-item b{color:var(--maroon-600)}
-.matchup{font-size:clamp(1.8rem,3.4vw,2.4rem); margin-bottom:var(--sp-4)}
+.matchup{font-size:clamp(1.5rem,2.4vw,1.9rem); margin-bottom:var(--sp-3)}
 .matchup .vs{color:var(--maroon-600)}
 .game-card p{max-width:42ch}
 .pitch-split{display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:clamp(32px,5vw,64px); align-items:center}
@@ -140,7 +140,7 @@ section.band{padding-block:clamp(72px,9vw,120px)}
 @media (max-width:900px){ .pitch-split{grid-template-columns:1fr} }
 
 /* What is footy — intro + photo */
-.footy-top{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(420px,100%),1fr)); gap:clamp(32px,6vw,72px); align-items:center; margin-bottom:var(--sp-6)}
+.footy-top{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(420px,100%),1fr)); gap:clamp(32px,5vw,56px); align-items:center; margin-bottom:var(--sp-5)}
 .footy-top .band-head{margin-bottom:0}
 
 /* Photo placeholder (swap for a real club photo) */
@@ -151,15 +151,15 @@ section.band{padding-block:clamp(72px,9vw,120px)}
 
 /* 30 years — board & life members */
 .band.legacy{padding-top:clamp(24px,3vw,40px)}
-.legacy .crest{height:120px; width:auto; margin-bottom:var(--sp-4)}
-.legacy h2{font-size:clamp(2rem,4vw,2.9rem)}
+.legacy .crest{height:88px; width:auto; margin-bottom:var(--sp-3)}
+.legacy h2{font-size:clamp(1.8rem,3vw,2.5rem)}
 .legacy-cards{display:grid; gap:var(--sp-4)}
-.legacy-card{display:block; text-decoration:none; background:var(--white); border:2px solid var(--charcoal); border-radius:var(--r-card); padding:var(--sp-5); transition:transform .15s ease, border-color .15s ease}
+.legacy-card{display:block; text-decoration:none; background:var(--white); border:2px solid var(--charcoal); border-radius:var(--r-card); padding:var(--sp-4) 28px; transition:transform .15s ease, border-color .15s ease}
 .legacy-card:hover{transform:translateY(-2px); border-color:var(--maroon-600)}
 .legacy-card:focus-visible{outline:3px solid var(--yellow-500); outline-offset:3px}
 .legacy-card .card-label{color:var(--maroon-600); margin-bottom:var(--sp-2)}
-.legacy-card h3{font-size:1.9rem; margin-bottom:var(--sp-3)}
-.legacy-card p{margin-bottom:var(--sp-4)}
+.legacy-card h3{font-size:1.5rem; margin-bottom:10px}
+.legacy-card p{margin-bottom:var(--sp-3)}
 
 /* Community */
 .community{background:var(--maroon-600); color:#FFFFFF}
@@ -172,13 +172,13 @@ section.band{padding-block:clamp(72px,9vw,120px)}
 .sponsor-strip .band-head{max-width:none; text-align:center}
 .sponsor-strip .rule{margin-inline:auto}
 .logo-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(140px,100%),1fr)); gap:var(--sp-3)}
-.logo-tile{aspect-ratio:3/2; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; padding:var(--sp-3); background:var(--white); border:2px solid var(--line); border-radius:var(--r-card); text-align:center}
+.logo-tile{aspect-ratio:2/1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; padding:var(--sp-3); background:var(--white); border:2px solid var(--line); border-radius:var(--r-card); text-align:center}
 .logo-tile .ph{font-size:0.66rem; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink-soft)}
 .logo-tile .nm{font-family:"Anton",sans-serif; text-transform:uppercase; font-size:1.05rem; line-height:1.1; color:var(--ink)}
 .center-cta{display:flex; justify-content:center; margin-top:var(--sp-5)}
 
 /* Footer */
-footer.site{background:var(--charcoal); color:rgba(255,255,255,0.75); margin-top:clamp(56px,7vw,96px)}
+footer.site{background:var(--charcoal); color:rgba(255,255,255,0.75); margin-top:clamp(48px,6vw,80px)}
 footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:var(--sp-5); justify-content:space-between; align-items:center}
 .foot-brand{display:flex; align-items:center; gap:12px}
 .foot-brand img{height:32px; filter:brightness(0) invert(1)}
@@ -189,7 +189,7 @@ footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:v
 .foot-meta{font-size:0.78rem; color:rgba(255,255,255,0.55); width:100%; padding-top:var(--sp-4); border-top:1px solid rgba(255,255,255,0.14); margin-top:var(--sp-2)}
 
 /* ---------- Tablet: collapse nav into a menu ---------- */
-@media (max-width:960px){
+@media (max-width:1100px){
   nav.links{display:none}
   .menu-btn{display:inline-flex}
   .mobile-menu{display:flex; flex-direction:column; padding:0 clamp(20px,4vw,40px) var(--sp-4); border-top:1px solid var(--line); background:var(--white)}
@@ -226,6 +226,10 @@ footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:v
   .nav-actions .btn{display:none}
 }
 [hidden]{display:none !important}
+/* Laptop fit: no photo taller than ~60% of the screen */
+.media img{max-height:min(60vh,480px)}
+.hero .media img, .hero-visual .media img{max-height:min(58vh,460px)}
+
 </style>
 </head>
 <body>
@@ -236,10 +240,10 @@ footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:v
       <img src="images/lions-logo.png" alt="San Diego Lions logo">
       <span class="brand-word">SAN DIEGO <span class="lions">LIONS</span></span>
     </a>
-    <nav class="links">
-      <a href="#about">About</a>
+    <nav class="links" aria-label="Main">
       <a href="schedule.html">Schedule</a>
-      <a href="#community">Community</a>
+      <a href="board.html">Board Members</a>
+      <a href="life-members.html">Life Members</a>
       <a href="sponsors.html">Sponsors</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -252,9 +256,9 @@ footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:v
     </div>
   </div>
   <nav class="mobile-menu" id="mobile-menu" hidden aria-label="Site menu">
-      <a class="menu-link" href="#about">About</a>
       <a class="menu-link" href="schedule.html">Schedule</a>
-      <a class="menu-link" href="#community">Community</a>
+      <a class="menu-link" href="board.html">Board Members</a>
+      <a class="menu-link" href="life-members.html">Life Members</a>
       <a class="menu-link" href="sponsors.html">Sponsors</a>
       <a class="menu-link" href="contact.html">Contact</a>
       <a class="btn btn-maroon" href="mailto:SanDiegoLionsAFC@gmail.com">Join the Lions</a>
@@ -444,10 +448,10 @@ footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:v
       <img src="images/lions-logo.png" alt="San Diego Lions logo">
       <span class="brand-word">SAN DIEGO LIONS</span>
     </div>
-    <nav class="foot-links">
-      <a href="#about">About</a>
+    <nav class="foot-links" aria-label="Footer">
       <a href="schedule.html">Schedule</a>
-      <a href="#community">Community</a>
+      <a href="board.html">Board Members</a>
+      <a href="life-members.html">Life Members</a>
       <a href="sponsors.html">Sponsors</a>
       <a href="contact.html">Contact</a>
       <a href="mailto:SanDiegoLionsAFC@gmail.com">SanDiegoLionsAFC@gmail.com</a>

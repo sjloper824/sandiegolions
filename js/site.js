@@ -16,7 +16,7 @@
     setMenu(false);
     btn.addEventListener('click', function () { setMenu(menu.hidden); });
     menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
-    window.addEventListener('resize', function () { if (window.innerWidth > 960) setMenu(false); });
+    window.addEventListener('resize', function () { if (window.innerWidth > 1100) setMenu(false); });
   }
 
   // Schedule filter (All / Games / Socials)

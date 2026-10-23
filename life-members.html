@@ -25,13 +25,13 @@ img{max-width:100%; display:block}
 
 /* Nav */
 header.site{position:sticky; top:0; z-index:20; background:var(--white); border-bottom:3px solid var(--charcoal)}
-.nav-row{display:flex; align-items:center; justify-content:space-between; gap:var(--sp-4); padding-block:16px}
+.nav-row{display:flex; align-items:center; justify-content:space-between; gap:var(--sp-4); padding-block:12px}
 .brand{display:flex; align-items:center; gap:14px; text-decoration:none; min-width:0}
-.brand img{height:42px; width:auto}
+.brand img{height:38px; width:auto}
 .brand-word{font-family:"Anton",sans-serif; font-size:1.2rem; letter-spacing:0.02em; white-space:nowrap}
 .brand-word .lions{color:var(--maroon-600)}
-nav.links{display:flex; gap:var(--sp-5); flex-wrap:wrap}
-nav.links a{font-size:0.85rem; text-transform:uppercase; letter-spacing:0.07em; font-weight:700; text-decoration:none; color:var(--ink); position:relative; padding-bottom:4px}
+nav.links{display:flex; gap:28px; flex-wrap:nowrap}
+nav.links a{font-size:0.8rem; white-space:nowrap; text-transform:uppercase; letter-spacing:0.07em; font-weight:700; text-decoration:none; color:var(--ink); position:relative; padding-bottom:4px}
 nav.links a::after{content:""; position:absolute; left:0; right:100%; bottom:0; height:3px; background:var(--yellow-500); transition:right .18s ease}
 nav.links a:hover::after, nav.links a:focus-visible::after, nav.links a[aria-current="page"]::after{right:0}
 nav.links a:focus-visible{outline:2px solid var(--maroon-600); outline-offset:3px}
@@ -58,33 +58,33 @@ nav.links a:focus-visible{outline:2px solid var(--maroon-600); outline-offset:3p
 /* Type + modules */
 .eyebrow{font-size:0.8rem; text-transform:uppercase; letter-spacing:0.16em; font-weight:800; color:var(--maroon-600); margin-bottom:var(--sp-3)}
 .eyebrow-light{color:var(--yellow-500)}
-.rule{width:72px; height:5px; background:var(--yellow-500); margin-block:var(--sp-4)}
+.rule{width:64px; height:5px; background:var(--yellow-500); margin-block:20px}
 .module{border-radius:var(--r-module); margin-inline:clamp(12px,3vw,32px)}
 .module .wrap{max-width:1160px}
-.on-dark h2{color:#FFFFFF; font-size:clamp(2rem,4vw,2.9rem)}
+.on-dark h2{color:#FFFFFF; font-size:clamp(1.8rem,3vw,2.5rem)}
 .on-dark p{color:rgba(255,255,255,0.78)}
 
 /* Page hero */
-.page-hero{padding-block:clamp(56px,8vw,104px) clamp(40px,5vw,64px)}
-.page-hero h1{font-size:clamp(2.6rem,6vw,4.4rem)}
+.page-hero{padding-block:clamp(40px,5vw,72px) clamp(32px,4vw,48px)}
+.page-hero h1{font-size:clamp(2.3rem,4.2vw,3.4rem)}
 .page-hero h1 .accent{color:var(--maroon-600)}
-.page-hero .lead{font-size:1.15rem; font-weight:500; max-width:56ch}
+.page-hero .lead{font-size:1.05rem; font-weight:500; max-width:56ch}
 
 /* Induction timeline */
-.timeline{padding-bottom:clamp(72px,9vw,120px)}
+.timeline{padding-bottom:clamp(56px,6vw,88px)}
 .tl-head, .tl-row{display:grid; grid-template-columns:minmax(0,260px) minmax(0,1fr); column-gap:var(--sp-5)}
 .tl-head{padding-bottom:var(--sp-3); border-bottom:3px solid var(--charcoal)}
 .tl-head span{font-size:0.74rem; font-weight:800; text-transform:uppercase; letter-spacing:0.14em; color:var(--ink-soft)}
 .tl{list-style:none; margin:0; padding:0}
 .tl-row{align-items:center; padding-block:clamp(20px,3vw,32px); border-bottom:2px solid var(--line)}
-.tl-year{font-family:"Anton",sans-serif; font-size:clamp(3.2rem,7vw,5.6rem); line-height:0.9; letter-spacing:0.01em; color:var(--maroon-600)}
+.tl-year{font-family:"Anton",sans-serif; font-size:clamp(2.8rem,5vw,4.2rem); line-height:0.9; letter-spacing:0.01em; color:var(--maroon-600)}
 .tl-people{display:flex; flex-wrap:wrap; gap:var(--sp-4) clamp(32px,5vw,64px); border-left:5px solid var(--yellow-500); padding-left:var(--sp-5)}
-.tl-person h3{font-size:clamp(1.5rem,2.6vw,2rem)}
+.tl-person h3{font-size:clamp(1.4rem,2.2vw,1.75rem)}
 .tl-person .nick{display:block; margin-top:6px; font-size:1.05rem; font-style:italic; font-weight:700; color:var(--maroon-600)}
 
 /* Closing CTA module */
-.cta-module{background:var(--charcoal); color:#FFFFFF; padding-block:clamp(48px,6vw,80px)}
-.cta-split{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(380px,100%),1fr)); gap:clamp(32px,6vw,72px); align-items:center}
+.cta-module{background:var(--charcoal); color:#FFFFFF; padding-block:clamp(40px,5vw,64px)}
+.cta-split{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(380px,100%),1fr)); gap:clamp(32px,5vw,56px); align-items:center}
 .cta-split .cta-row{margin-top:var(--sp-5)}
 .media{margin:0; background:var(--frame); padding:12px; border-radius:22px; box-shadow:0 18px 32px -14px rgba(0,0,0,0.45); transform:rotate(1.4deg)}
 .media img{width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:12px}
@@ -92,7 +92,7 @@ nav.links a:focus-visible{outline:2px solid var(--maroon-600); outline-offset:3p
 .cta-split p{margin-top:var(--sp-3); max-width:52ch}
 
 /* Footer */
-footer.site{background:var(--charcoal); color:rgba(255,255,255,0.75); margin-top:clamp(56px,7vw,96px)}
+footer.site{background:var(--charcoal); color:rgba(255,255,255,0.75); margin-top:clamp(48px,6vw,80px)}
 footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:var(--sp-5); justify-content:space-between; align-items:center}
 .foot-brand{display:flex; align-items:center; gap:12px}
 .foot-brand img{height:32px; filter:brightness(0) invert(1)}
@@ -102,7 +102,7 @@ footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:v
 .foot-links a:hover{color:var(--yellow-500)}
 .foot-meta{font-size:0.78rem; color:rgba(255,255,255,0.55); width:100%; padding-top:var(--sp-4); border-top:1px solid rgba(255,255,255,0.14); margin-top:var(--sp-2)}
 
-@media (max-width:960px){
+@media (max-width:1100px){
   nav.links{display:none}
   .menu-btn{display:inline-flex}
   .mobile-menu{display:flex; flex-direction:column; padding:0 clamp(20px,4vw,40px) var(--sp-4); border-top:1px solid var(--line); background:var(--white)}
@@ -127,6 +127,10 @@ footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:v
 }
 @media (max-width:520px){ .nav-actions .btn{display:none} }
 [hidden]{display:none !important}
+/* Laptop fit: no photo taller than ~60% of the screen */
+.media img{max-height:min(60vh,480px)}
+.hero .media img, .hero-visual .media img{max-height:min(58vh,460px)}
+
 </style>
 </head>
 <body>
@@ -137,10 +141,10 @@ footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:v
       <img src="images/lions-logo.png" alt="San Diego Lions logo">
       <span class="brand-word">SAN DIEGO <span class="lions">LIONS</span></span>
     </a>
-    <nav class="links">
-      <a href="index.html#about">About</a>
+    <nav class="links" aria-label="Main">
       <a href="schedule.html">Schedule</a>
-      <a href="index.html#community">Community</a>
+      <a href="board.html">Board Members</a>
+      <a href="life-members.html" aria-current="page">Life Members</a>
       <a href="sponsors.html">Sponsors</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -153,9 +157,9 @@ footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:v
     </div>
   </div>
   <nav class="mobile-menu" id="mobile-menu" hidden aria-label="Site menu">
-      <a class="menu-link" href="index.html#about">About</a>
       <a class="menu-link" href="schedule.html">Schedule</a>
-      <a class="menu-link" href="index.html#community">Community</a>
+      <a class="menu-link" href="board.html">Board Members</a>
+      <a class="menu-link" href="life-members.html" aria-current="page">Life Members</a>
       <a class="menu-link" href="sponsors.html">Sponsors</a>
       <a class="menu-link" href="contact.html">Contact</a>
       <a class="btn btn-maroon" href="mailto:SanDiegoLionsAFC@gmail.com">Join the Lions</a>
@@ -213,10 +217,10 @@ footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:v
       <img src="images/lions-logo.png" alt="San Diego Lions logo">
       <span class="brand-word">SAN DIEGO LIONS</span>
     </div>
-    <nav class="foot-links">
-      <a href="index.html#about">About</a>
+    <nav class="foot-links" aria-label="Footer">
       <a href="schedule.html">Schedule</a>
-      <a href="index.html#community">Community</a>
+      <a href="board.html">Board Members</a>
+      <a href="life-members.html">Life Members</a>
       <a href="sponsors.html">Sponsors</a>
       <a href="contact.html">Contact</a>
       <a href="mailto:SanDiegoLionsAFC@gmail.com">SanDiegoLionsAFC@gmail.com</a>
