@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | San Diego Lions AFC</title>
+<meta name="description" content="Get involved with the San Diego Lions: new players, co-ed league players and social members welcome.">
+<link rel="icon" type="image/png" href="images/lions-logo.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact | San Diego Lions AFC">
+<meta property="og:description" content="Get involved with the San Diego Lions: new players, co-ed league players and social members welcome.">
+<meta property="og:image" content="https://sandiegolions.com/images/hero-team-nationals.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Work+Sans:wght@400;500;600;700;800&amp;family=Permanent+Marker&amp;display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0; background:var(--white); color:var(--ink); font-family:"Work Sans","Segoe UI",system-ui,sans-serif}
+.wrap{max-width:1200px; margin:0 auto; padding-inline:clamp(20px,4vw,40px)}
+h1,h2,h3{font-family:"Anton","Arial Narrow",sans-serif; font-weight:400; text-transform:uppercase; letter-spacing:0.012em; text-wrap:balance; line-height:1.0; margin:0}
+p{line-height:1.7; color:var(--ink-soft); margin:0}
+a{color:inherit}
+img{max-width:100%; display:block}
+
+/* Nav */
+header.site{position:sticky; top:0; z-index:20; background:var(--white); border-bottom:3px solid var(--charcoal)}
+.nav-row{display:flex; align-items:center; justify-content:space-between; gap:var(--sp-4); padding-block:16px}
+.brand{display:flex; align-items:center; gap:14px; text-decoration:none; min-width:0}
+.brand img{height:42px; width:auto}
+.brand-word{font-family:"Anton",sans-serif; font-size:1.2rem; letter-spacing:0.02em; white-space:nowrap}
+.brand-word .lions{color:var(--maroon-600)}
+nav.links{display:flex; gap:var(--sp-5); flex-wrap:wrap}
+nav.links a{font-size:0.85rem; text-transform:uppercase; letter-spacing:0.07em; font-weight:700; text-decoration:none; color:var(--ink); position:relative; padding-bottom:4px}
+nav.links a::after{content:""; position:absolute; left:0; right:100%; bottom:0; height:3px; background:var(--yellow-500); transition:right .18s ease}
+nav.links a:hover::after, nav.links a:focus-visible::after, nav.links a[aria-current="page"]::after{right:0}
+nav.links a:focus-visible{outline:2px solid var(--maroon-600); outline-offset:3px}
+.nav-actions{display:flex; align-items:center; gap:12px}
+.menu-btn{display:none; width:44px; height:44px; align-items:center; justify-content:center; padding:0; background:transparent; color:var(--ink); border:2px solid var(--charcoal); border-radius:var(--r-btn); cursor:pointer}
+.menu-btn svg{width:22px; height:22px}
+.menu-btn:focus-visible{outline:2px solid var(--maroon-600); outline-offset:2px}
+.mobile-menu{display:none}
+
+/* Buttons */
+.btn{display:inline-block; text-decoration:none; font-family:inherit; font-weight:800; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; padding:15px 28px; border-radius:var(--r-btn); border:2px solid transparent; white-space:nowrap; cursor:pointer}
+.btn-sm{padding:13px 20px; font-size:0.8rem}
+.btn-maroon{background:var(--maroon-600); color:#FFFFFF}
+.btn-maroon:hover{background:var(--maroon-700)}
+.btn-primary{background:var(--yellow-500); color:var(--charcoal)}
+.btn-primary:hover{background:var(--yellow-600)}
+.btn:focus-visible{outline:2px solid var(--maroon-600); outline-offset:2px}
+.link-cta{display:inline-flex; align-items:center; gap:8px; text-decoration:none; font-weight:800; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--yellow-500); border-bottom:3px solid var(--yellow-500); padding-bottom:3px; overflow-wrap:anywhere}
+
+/* Type */
+.eyebrow{font-size:0.8rem; text-transform:uppercase; letter-spacing:0.16em; font-weight:800; color:var(--maroon-600); margin-bottom:var(--sp-3)}
+.rule{width:72px; height:5px; background:var(--yellow-500); margin-block:var(--sp-4)}
+
+/* Page hero */
+.page-hero{padding-block:clamp(56px,8vw,104px) clamp(40px,5vw,56px)}
+.page-hero h1{font-size:clamp(2.6rem,6vw,4.4rem); max-width:16ch}
+.page-hero h1 .accent{color:var(--maroon-600)}
+.page-hero .lead{font-size:1.15rem; font-weight:500; max-width:56ch}
+.page-hero .lead + p{margin-top:var(--sp-3); max-width:56ch}
+
+.hero-split{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(440px,100%),1fr)); gap:clamp(32px,6vw,72px); align-items:center}
+.media{margin:0; background:var(--frame); padding:12px; border-radius:22px; box-shadow:0 18px 32px -14px rgba(23,17,15,0.4); transform:rotate(1.4deg)}
+.media img{width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:12px}
+@media (max-width:640px){ .media{transform:none} }
+
+/* Contact layout */
+.contact{padding-bottom:clamp(24px,4vw,48px)}
+.contact-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(420px,100%),1fr)); gap:var(--sp-4); align-items:start}
+.form-card{background:var(--white); border:2px solid var(--charcoal); border-radius:var(--r-module); padding:clamp(24px,4vw,44px)}
+.form-card h2{font-size:clamp(1.6rem,3vw,2.1rem); margin-bottom:var(--sp-5)}
+.form-card h2::before{content:""; display:block; width:40px; height:5px; background:var(--yellow-500); margin-bottom:var(--sp-3)}
+form{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(220px,100%),1fr)); gap:var(--sp-4) var(--sp-3)}
+.field{display:flex; flex-direction:column; gap:var(--sp-2)}
+.field.full{grid-column:1 / -1}
+.field label{font-size:0.74rem; font-weight:800; text-transform:uppercase; letter-spacing:0.12em; color:var(--ink)}
+.field label .opt{font-weight:600; letter-spacing:0.06em; text-transform:none; color:var(--ink-soft)}
+.field input, .field select, .field textarea{font:inherit; font-size:1rem; color:var(--ink); background:var(--white); border:2px solid var(--line); border-radius:var(--r-btn); padding:13px 14px; min-height:48px; width:100%}
+.field textarea{min-height:140px; resize:vertical}
+.field input:focus, .field select:focus, .field textarea:focus{outline:none; border-color:var(--charcoal); box-shadow:0 0 0 3px var(--yellow-500)}
+.form-foot{grid-column:1 / -1; display:flex; flex-wrap:wrap; align-items:center; gap:var(--sp-3) var(--sp-4); margin-top:var(--sp-2)}
+.form-foot p{font-weight:600}
+.sent{display:flex; flex-direction:column; gap:var(--sp-3)}
+.sent h3{font-size:2rem}
+
+.info-card{background:var(--charcoal); color:#FFFFFF; border-radius:var(--r-module); padding:clamp(24px,4vw,44px); display:flex; flex-direction:column; gap:var(--sp-5)}
+.info-card .card-label{display:block; font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:0.14em; color:var(--yellow-500); margin-bottom:var(--sp-3)}
+.info-card h3{font-size:1.9rem; color:#FFFFFF}
+.info-items{display:grid; gap:var(--sp-4)}
+.info-item b{display:block; font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:var(--yellow-500); margin-bottom:6px}
+.info-item span{font-family:"Anton",sans-serif; font-size:1.3rem; text-transform:uppercase; letter-spacing:0.02em; line-height:1.15}
+.info-item small{display:block; margin-top:4px; font-size:0.92rem; color:rgba(255,255,255,0.75)}
+.info-divider{border-top:1px solid rgba(255,255,255,0.16); padding-top:var(--sp-5)}
+.info-card p{color:rgba(255,255,255,0.78)}
+
+/* Footer */
+footer.site{background:var(--charcoal); color:rgba(255,255,255,0.75); margin-top:clamp(56px,7vw,96px)}
+footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:var(--sp-5); justify-content:space-between; align-items:center}
+.foot-brand{display:flex; align-items:center; gap:12px}
+.foot-brand img{height:32px; filter:brightness(0) invert(1)}
+.foot-brand .brand-word{color:#FFFFFF}
+.foot-links{display:flex; gap:var(--sp-4); flex-wrap:wrap}
+.foot-links a{font-size:0.82rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; text-decoration:none; color:rgba(255,255,255,0.75); overflow-wrap:anywhere}
+.foot-links a:hover{color:var(--yellow-500)}
+.foot-meta{font-size:0.78rem; color:rgba(255,255,255,0.55); width:100%; padding-top:var(--sp-4); border-top:1px solid rgba(255,255,255,0.14); margin-top:var(--sp-2)}
+
+@media (max-width:960px){
+  nav.links{display:none}
+  .menu-btn{display:inline-flex}
+  .mobile-menu{display:flex; flex-direction:column; padding:0 clamp(20px,4vw,40px) var(--sp-4); border-top:1px solid var(--line); background:var(--white)}
+  .mobile-menu a.menu-link{display:block; padding:14px 0; font-size:1rem; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; text-decoration:none; color:var(--ink); border-bottom:1px solid var(--line)}
+  .mobile-menu .btn{margin-top:var(--sp-4); text-align:center}
+}
+@media (max-width:640px){
+  .nav-row{padding-block:12px; gap:var(--sp-3)}
+  .brand{gap:10px}
+  .brand img{height:36px}
+  .brand-word{font-size:1.05rem}
+  .page-hero{padding-block:40px 32px}
+  .page-hero h1{font-size:clamp(2.2rem,10vw,2.7rem)}
+  .form-card, .info-card{--r-module:16px}
+  .form-foot .btn{width:100%; text-align:center}
+  .foot-links{flex-direction:column; gap:0; width:100%}
+  .foot-links a{padding-block:12px; border-bottom:1px solid rgba(255,255,255,0.12)}
+}
+@media (max-width:520px){ .nav-actions .btn{display:none} }
+[hidden]{display:none !important}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="site">
+  <div class="wrap nav-row">
+    <a class="brand" href="index.html">
+      <img src="images/lions-logo.png" alt="San Diego Lions logo">
+      <span class="brand-word">SAN DIEGO <span class="lions">LIONS</span></span>
+    </a>
+    <nav class="links">
+      <a href="index.html#about">About</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="index.html#community">Community</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-maroon btn-sm" href="mailto:SanDiegoLionsAFC@gmail.com">Join the Lions</a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <svg class="icon-close" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"></line><line x1="19" y1="5" x2="5" y2="19"></line></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu" hidden aria-label="Site menu">
+      <a class="menu-link" href="index.html#about">About</a>
+      <a class="menu-link" href="schedule.html">Schedule</a>
+      <a class="menu-link" href="index.html#community">Community</a>
+      <a class="menu-link" href="sponsors.html">Sponsors</a>
+      <a class="menu-link" href="contact.html" aria-current="page">Contact</a>
+      <a class="btn btn-maroon" href="mailto:SanDiegoLionsAFC@gmail.com">Join the Lions</a>
+    </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap hero-split">
+      <div>
+      <p class="eyebrow">Contact</p>
+      <h1>Interested in getting involved with <span class="accent">the Lions?</span></h1>
+      <div class="rule"></div>
+      <p class="lead">Fill out the contact form and introduce yourself!</p>
+      <p>The Lions are looking for new players, co-ed league players, and social members.</p>
+      </div>
+      <figure class="media"><img src="images/social-costume.jpg" alt="Lions members and families in costume at a club social"></figure>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap contact-grid">
+      <div class="form-card">
+        
+          <h2>Please complete the form below.</h2>
+          <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p hidden><label>Leave this empty: <input name="bot-field"></label></p>
+            <div class="field">
+              <label for="c-name">Name</label>
+              <input id="c-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="c-email">Email</label>
+              <input id="c-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="c-phone">Phone <span class="opt">(optional)</span></label>
+              <input id="c-phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="c-interest">I'm interested in</label>
+              <select id="c-interest" name="interest" required>
+                <option value="">Choose one</option>
+                <option>New player</option>
+                <option>Co-ed league</option>
+                <option>Social member</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" name="message"></textarea>
+            </div>
+            <div class="form-foot">
+              <button class="btn btn-primary" type="submit">Send message</button>
+              <p>We're looking forward to hearing from you!</p>
+            </div>
+          </form>
+        
+        
+      </div>
+
+      <aside class="info-card">
+        <div>
+          <span class="card-label">Come to training</span>
+          <div class="info-items">
+            <div class="info-item"><b>Days</b><span>Tuesdays &amp; Thursdays</span></div>
+            <div class="info-item"><b>Time</b><span>5:30 – 7:30 PM</span></div>
+            <div class="info-item"><b>Where</b><span>Nobel Athletic Area</span><small>8810 Judicial Dr, San Diego, CA 92122</small></div>
+            <div class="info-item"><b>Season</b><span>April to mid-October</span></div>
+          </div>
+        </div>
+        <div class="info-divider">
+          <span class="card-label">Prefer email?</span>
+          <a class="link-cta" href="mailto:SanDiegoLionsAFC@gmail.com">SanDiegoLionsAFC@gmail.com</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-brand">
+      <img src="images/lions-logo.png" alt="San Diego Lions logo">
+      <span class="brand-word">SAN DIEGO LIONS</span>
+    </div>
+    <nav class="foot-links">
+      <a href="index.html#about">About</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="index.html#community">Community</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="contact.html">Contact</a>
+      <a href="mailto:SanDiegoLionsAFC@gmail.com">SanDiegoLionsAFC@gmail.com</a>
+    </nav>
+    <p class="foot-meta">© San Diego Lions Australian Football Club · A 501(c)3 nonprofit</p>
+  </div>
+</footer>
+</div>
+<script src="js/site.js" defer></script>
+</body>
+</html>

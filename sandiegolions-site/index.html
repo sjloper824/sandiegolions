@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>San Diego Lions AFC | Australian Football in San Diego</title>
+<meta name="description" content="The San Diego Lions are a USAFL Australian football club, est. 1997. No experience necessary: come train with us Tuesdays and Thursdays.">
+<link rel="icon" type="image/png" href="images/lions-logo.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="San Diego Lions AFC | Australian Football in San Diego">
+<meta property="og:description" content="The San Diego Lions are a USAFL Australian football club, est. 1997. No experience necessary: come train with us Tuesdays and Thursdays.">
+<meta property="og:image" content="https://sandiegolions.com/images/hero-team-nationals.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Work+Sans:wght@400;500;600;700;800&amp;family=Permanent+Marker&amp;display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0; background:var(--white); color:var(--ink); font-family:"Work Sans","Segoe UI",system-ui,sans-serif}
+.wrap{max-width:1200px; margin:0 auto; padding-inline:clamp(20px,4vw,40px)}
+h1,h2,h3{font-family:"Anton","Arial Narrow",sans-serif; font-weight:400; text-transform:uppercase; letter-spacing:0.012em; text-wrap:balance; line-height:1.0; margin:0}
+.marker{font-family:"Permanent Marker",cursive; font-weight:400}
+p{line-height:1.7; color:var(--ink-soft); margin:0}
+a{color:inherit}
+img{max-width:100%; display:block}
+
+/* Nav */
+header.site{position:sticky; top:0; z-index:20; background:var(--white); border-bottom:3px solid var(--charcoal)}
+.nav-row{display:flex; align-items:center; justify-content:space-between; gap:var(--sp-4); padding-block:16px}
+.brand{display:flex; align-items:center; gap:14px; text-decoration:none; min-width:0}
+.brand img{height:42px; width:auto}
+.brand-word{font-family:"Anton",sans-serif; font-size:1.2rem; letter-spacing:0.02em; white-space:nowrap}
+.brand-word .lions{color:var(--maroon-600)}
+nav.links{display:flex; gap:var(--sp-5); flex-wrap:wrap}
+nav.links a{font-size:0.85rem; text-transform:uppercase; letter-spacing:0.07em; font-weight:700; text-decoration:none; color:var(--ink); position:relative; padding-bottom:4px}
+nav.links a::after{content:""; position:absolute; left:0; right:100%; bottom:0; height:3px; background:var(--yellow-500); transition:right .18s ease}
+nav.links a:hover::after, nav.links a:focus-visible::after{right:0}
+nav.links a:focus-visible{outline:2px solid var(--maroon-600); outline-offset:3px}
+.nav-actions{display:flex; align-items:center; gap:12px}
+.menu-btn{display:none; width:44px; height:44px; align-items:center; justify-content:center; padding:0; background:transparent; color:var(--ink); border:2px solid var(--charcoal); border-radius:var(--r-btn); cursor:pointer}
+.menu-btn svg{width:22px; height:22px}
+.menu-btn:focus-visible{outline:2px solid var(--maroon-600); outline-offset:2px}
+.mobile-menu{display:none}
+
+/* Buttons — squared */
+.btn{display:inline-block; text-decoration:none; font-weight:800; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; padding:15px 28px; border-radius:var(--r-btn); border:2px solid transparent; white-space:nowrap}
+.btn-sm{padding:13px 20px; font-size:0.8rem}
+.btn-maroon{background:var(--maroon-600); color:#FFFFFF}
+.btn-maroon:hover{background:var(--maroon-700)}
+.btn-primary{background:var(--yellow-500); color:var(--charcoal)}
+.btn-primary:hover{background:var(--yellow-600)}
+.btn-ghost{border-color:var(--maroon-600); color:var(--maroon-600)}
+.btn-ghost:hover{background:var(--maroon-50)}
+.btn-ghost.on-dark{border-color:rgba(255,255,255,0.7); color:#FFFFFF}
+.btn-ghost.on-dark:hover{background:rgba(255,255,255,0.12)}
+.btn:focus-visible{outline:2px solid var(--yellow-500); outline-offset:2px}
+.section-cta{margin-top:var(--sp-5)}
+.link-cta{display:inline-flex; align-items:center; gap:8px; text-decoration:none; font-weight:800; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--maroon-600); border-bottom:3px solid var(--yellow-500); padding-bottom:3px}
+.link-cta:hover{color:var(--maroon-700)}
+
+/* Shared type */
+.eyebrow{font-size:0.8rem; text-transform:uppercase; letter-spacing:0.16em; font-weight:800; color:var(--maroon-600); margin-bottom:var(--sp-3)}
+.eyebrow-light{color:var(--yellow-500)}
+.rule{width:72px; height:5px; background:var(--yellow-500); margin-block:var(--sp-4)}
+
+/* Rounded modules (inset panels) */
+.module{border-radius:var(--r-module); margin-inline:clamp(12px,3vw,32px)}
+.module .wrap{max-width:1160px}
+
+/* Photos — framed */
+.media{margin:0}
+.media img{width:100%; object-fit:cover; border-radius:var(--r-card)}
+.framed .media{background:var(--frame); padding:12px; border-radius:calc(var(--r-card) + 6px); box-shadow:0 14px 28px -12px rgba(23,17,15,0.35); transform:rotate(-1.2deg)}
+.framed .media img{border-radius:12px}
+.framed .media.tilt-r{transform:rotate(1.4deg)}
+
+/* Hero */
+.hero{padding-block:clamp(56px,8vw,104px) clamp(48px,6vw,80px)}
+.hero-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(460px,100%),1fr)); gap:clamp(32px,6vw,80px); align-items:center}
+.hero h1{font-size:clamp(2.75rem,6.4vw,4.9rem)}
+.hero h1 .accent{color:var(--maroon-600)}
+.hero p.lead{font-size:1.15rem; font-weight:500; max-width:46ch; margin-bottom:var(--sp-5)}
+.cta-row{display:flex; gap:var(--sp-3); flex-wrap:wrap}
+.hero .media img{aspect-ratio:4/3}
+
+/* Stats */
+.stats{background:var(--maroon-600); color:#FFFFFF}
+.stats .wrap{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(200px,100%),1fr)); gap:var(--sp-4); padding-block:var(--sp-6)}
+.stat{border-left:1px solid rgba(255,255,255,0.25); padding-left:var(--sp-4)}
+.stat:first-child{border-left:none; padding-left:0}
+.stat b{display:block; font-family:"Anton",sans-serif; font-size:clamp(1.9rem,3.8vw,2.8rem); font-weight:400; line-height:1.05}
+.stat span{display:block; margin-top:8px; font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--maroon-100)}
+
+/* Bands */
+section.band{padding-block:clamp(72px,9vw,120px)}
+.band-head{max-width:640px; margin-bottom:var(--sp-6)}
+.band-head .eyebrow{margin-bottom:var(--sp-2)}
+.band-head h2{font-size:clamp(2rem,4vw,2.9rem)}
+.module-pad{padding-block:clamp(56px,7vw,96px)}
+
+/* What is footy */
+.explain-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(260px,100%),1fr)); gap:var(--sp-4)}
+.explain-card{position:relative}
+.explain-card h3{font-size:1.45rem; margin-bottom:var(--sp-3)}
+.explain-card p{font-size:0.98rem}
+.cards-outline .explain-card{background:var(--white); border:2px solid var(--charcoal); border-radius:var(--r-card); padding:var(--sp-5)}
+.cards-charcoal .explain-card{background:var(--charcoal); border-radius:var(--r-card); padding:var(--sp-5)}
+.cards-charcoal .explain-card h3{color:#FFFFFF}
+.cards-charcoal .explain-card p{color:rgba(255,255,255,0.78)}
+.cards-rule .explain-card{border-top:5px solid var(--maroon-600); padding-top:var(--sp-4)}
+.cards-outline .explain-card::before, .cards-charcoal .explain-card::before{content:""; display:block; width:40px; height:5px; background:var(--yellow-500); margin-bottom:var(--sp-3)}
+
+/* Social */
+.social-band{background:var(--maroon-700); color:#FFFFFF}
+.split{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(380px,100%),1fr)); gap:clamp(32px,6vw,72px); align-items:center}
+.on-dark h2{color:#FFFFFF; font-size:clamp(2rem,4vw,2.9rem)}
+.on-dark p{color:var(--maroon-100)}
+.on-dark p + p{margin-top:var(--sp-3)}
+.badge{display:inline-block; background:var(--yellow-500); color:var(--charcoal); font-size:1.05rem; padding:6px 16px 8px; transform:rotate(-2deg); margin-bottom:var(--sp-4)}
+.social-band .media img{aspect-ratio:4/3}
+
+/* Training & Games */
+.pitch-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(420px,100%),1fr)); gap:var(--sp-4)}
+.schedule-card{background:var(--charcoal); color:#FFFFFF; border-radius:var(--r-module); padding:var(--sp-5) clamp(24px,4vw,44px)}
+.card-label{display:block; font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:0.14em; margin:0 0 var(--sp-4)}
+.schedule-card .card-label{color:var(--yellow-500)}
+.schedule-items{display:flex; flex-wrap:wrap; gap:var(--sp-4)}
+.schedule-item{flex:1 1 150px}
+.schedule-item b{display:block; font-size:0.74rem; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:var(--yellow-500); margin-bottom:var(--sp-2)}
+.schedule-item span{font-family:"Anton",sans-serif; font-size:1.35rem; text-transform:uppercase; letter-spacing:0.02em}
+.game-card{background:var(--white); border:2px solid var(--charcoal); border-radius:var(--r-module); padding:var(--sp-5) clamp(24px,4vw,44px)}
+.game-card .card-label{color:var(--maroon-600)}
+.game-card .schedule-item b{color:var(--maroon-600)}
+.matchup{font-size:clamp(1.8rem,3.4vw,2.4rem); margin-bottom:var(--sp-4)}
+.matchup .vs{color:var(--maroon-600)}
+.game-card p{max-width:42ch}
+.pitch-split{display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:clamp(32px,5vw,64px); align-items:center}
+.pitch-stack{display:grid; gap:var(--sp-4)}
+.pitch-stack .schedule-item{flex:1 1 140px}
+@media (max-width:900px){ .pitch-split{grid-template-columns:1fr} }
+
+/* What is footy — intro + photo */
+.footy-top{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(420px,100%),1fr)); gap:clamp(32px,6vw,72px); align-items:center; margin-bottom:var(--sp-6)}
+.footy-top .band-head{margin-bottom:0}
+
+/* Photo placeholder (swap for a real club photo) */
+.ph-img{aspect-ratio:4/3; border-radius:var(--r-card); background:var(--maroon-50); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; padding:16px; text-align:center; color:var(--maroon-600); font-size:0.74rem; font-weight:800; text-transform:uppercase; letter-spacing:0.14em}
+.ph-img svg{width:36px; height:36px}
+.framed .media .ph-img{border-radius:12px}
+.footy-top .media img, .pitch-split .media img{aspect-ratio:4/3}
+
+/* 30 years — board & life members */
+.band.legacy{padding-top:clamp(24px,3vw,40px)}
+.legacy .crest{height:120px; width:auto; margin-bottom:var(--sp-4)}
+.legacy h2{font-size:clamp(2rem,4vw,2.9rem)}
+.legacy-cards{display:grid; gap:var(--sp-4)}
+.legacy-card{display:block; text-decoration:none; background:var(--white); border:2px solid var(--charcoal); border-radius:var(--r-card); padding:var(--sp-5); transition:transform .15s ease, border-color .15s ease}
+.legacy-card:hover{transform:translateY(-2px); border-color:var(--maroon-600)}
+.legacy-card:focus-visible{outline:3px solid var(--yellow-500); outline-offset:3px}
+.legacy-card .card-label{color:var(--maroon-600); margin-bottom:var(--sp-2)}
+.legacy-card h3{font-size:1.9rem; margin-bottom:var(--sp-3)}
+.legacy-card p{margin-bottom:var(--sp-4)}
+
+/* Community */
+.community{background:var(--maroon-600); color:#FFFFFF}
+.community .marker{display:block; font-size:1.6rem; color:var(--yellow-500); margin-bottom:var(--sp-3); transform:rotate(-1.5deg)}
+.community .media{max-width:440px}
+.community .media img{aspect-ratio:1/1}
+
+/* Sponsors strip */
+.band.sponsor-strip{padding-bottom:0}
+.sponsor-strip .band-head{max-width:none; text-align:center}
+.sponsor-strip .rule{margin-inline:auto}
+.logo-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(140px,100%),1fr)); gap:var(--sp-3)}
+.logo-tile{aspect-ratio:3/2; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; padding:var(--sp-3); background:var(--white); border:2px solid var(--line); border-radius:var(--r-card); text-align:center}
+.logo-tile .ph{font-size:0.66rem; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink-soft)}
+.logo-tile .nm{font-family:"Anton",sans-serif; text-transform:uppercase; font-size:1.05rem; line-height:1.1; color:var(--ink)}
+.center-cta{display:flex; justify-content:center; margin-top:var(--sp-5)}
+
+/* Footer */
+footer.site{background:var(--charcoal); color:rgba(255,255,255,0.75); margin-top:clamp(56px,7vw,96px)}
+footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:var(--sp-5); justify-content:space-between; align-items:center}
+.foot-brand{display:flex; align-items:center; gap:12px}
+.foot-brand img{height:32px; filter:brightness(0) invert(1)}
+.foot-brand .brand-word{color:#FFFFFF}
+.foot-links{display:flex; gap:var(--sp-4); flex-wrap:wrap}
+.foot-links a{font-size:0.82rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; text-decoration:none; color:rgba(255,255,255,0.75); overflow-wrap:anywhere}
+.foot-links a:hover{color:var(--yellow-500)}
+.foot-meta{font-size:0.78rem; color:rgba(255,255,255,0.55); width:100%; padding-top:var(--sp-4); border-top:1px solid rgba(255,255,255,0.14); margin-top:var(--sp-2)}
+
+/* ---------- Tablet: collapse nav into a menu ---------- */
+@media (max-width:960px){
+  nav.links{display:none}
+  .menu-btn{display:inline-flex}
+  .mobile-menu{display:flex; flex-direction:column; padding:0 clamp(20px,4vw,40px) var(--sp-4); border-top:1px solid var(--line); background:var(--white)}
+  .mobile-menu a.menu-link{display:block; padding:14px 0; font-size:1rem; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; text-decoration:none; color:var(--ink); border-bottom:1px solid var(--line)}
+  .mobile-menu a.menu-link:focus-visible{outline:2px solid var(--maroon-600); outline-offset:2px}
+  .mobile-menu .btn{margin-top:var(--sp-4); text-align:center}
+}
+
+/* ---------- Phone ---------- */
+@media (max-width:640px){
+  .nav-row{padding-block:12px; gap:var(--sp-3)}
+  .brand{gap:10px}
+  .brand img{height:36px}
+  .brand-word{font-size:1.05rem}
+  .module{--r-module:16px; margin-inline:12px}
+  section.band{padding-block:64px}
+  .band.legacy{padding-top:8px}
+  .module-pad{padding-block:48px}
+  .band-head{margin-bottom:var(--sp-5)}
+  .hero{padding-block:40px 48px}
+  .hero h1{font-size:clamp(2.4rem,11vw,2.9rem)}
+  .hero p.lead{font-size:1.05rem}
+  .cta-row .btn, .btn.section-cta{width:100%; text-align:center}
+  .stats .wrap{grid-template-columns:repeat(2,minmax(0,1fr)); row-gap:var(--sp-5); padding-block:var(--sp-5)}
+  .stat, .stat:first-child{border-left:none; padding-left:0}
+  .cards-outline .explain-card, .cards-charcoal .explain-card, .schedule-card, .game-card, .legacy-card{padding:var(--sp-4)}
+  .legacy .crest{height:96px}
+  .legacy-card h3{font-size:1.6rem}
+  .framed .media, .framed .media.tilt-r{transform:none}
+  .foot-links{flex-direction:column; gap:0; width:100%}
+  .foot-links a{padding-block:12px; border-bottom:1px solid rgba(255,255,255,0.12)}
+}
+@media (max-width:520px){
+  .nav-actions .btn{display:none}
+}
+[hidden]{display:none !important}
+</style>
+</head>
+<body>
+<div class="page framed">
+<header class="site">
+  <div class="wrap nav-row">
+    <a class="brand" href="#top">
+      <img src="images/lions-logo.png" alt="San Diego Lions logo">
+      <span class="brand-word">SAN DIEGO <span class="lions">LIONS</span></span>
+    </a>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="#community">Community</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-maroon btn-sm" href="mailto:SanDiegoLionsAFC@gmail.com">Join the Lions</a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <svg class="icon-close" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"></line><line x1="19" y1="5" x2="5" y2="19"></line></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu" hidden aria-label="Site menu">
+      <a class="menu-link" href="#about">About</a>
+      <a class="menu-link" href="schedule.html">Schedule</a>
+      <a class="menu-link" href="#community">Community</a>
+      <a class="menu-link" href="sponsors.html">Sponsors</a>
+      <a class="menu-link" href="contact.html">Contact</a>
+      <a class="btn btn-maroon" href="mailto:SanDiegoLionsAFC@gmail.com">Join the Lions</a>
+    </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Est. 1997 · San Diego, California</p>
+        <h1>Australian football,<br><span class="accent">built for everyone.</span></h1>
+        <div class="rule"></div>
+        <p class="lead">Like soccer if you could use your hands. Like rugby if there were no offsides. The San Diego Lions are a USAFL club with a spot on the field for first-timers and veterans alike — no experience necessary.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:SanDiegoLionsAFC@gmail.com">Join the Lions</a>
+          <a class="btn btn-ghost" href="#schedule">See the schedule</a>
+        </div>
+      </div>
+      <figure class="media tilt-r">
+        <img src="images/hero-team-nationals.jpg" alt="Lions players huddled on the sideline at USAFL Nationals">
+      </figure>
+    </div>
+  </section>
+
+  <section class="stats module">
+    <div class="wrap">
+      <div class="stat"><b>1997</b><span>Club Founded</span></div>
+      <div class="stat"><b>4x</b><span>USAFL Premierships (Div. 1, 2 &amp; 4)</span></div>
+      <div class="stat"><b>100+</b><span>Active Players &amp; Supporters</span></div>
+      <div class="stat"><b>15</b><span>Life Members</span></div>
+    </div>
+  </section>
+
+  <section class="band" id="about">
+    <div class="wrap">
+      <div class="footy-top">
+        <div class="band-head">
+          <p class="eyebrow">What is footy?</p>
+          <h2>Fast, physical, and genuinely fun.</h2>
+        </div>
+        
+      </div>
+      <div class="explain-grid cards-charcoal">
+        <div class="explain-card">
+          <h3>No sideline to hide on</h3>
+          <p>Australian Football, or “footy,” is fast-paced and physical. There's no offside and a role for every build and skill set — kick, mark, handball, tackle.</p>
+        </div>
+        <div class="explain-card">
+          <h3>Zero experience required</h3>
+          <p>We'll teach you the rules and the skills from scratch. Come to a Tuesday or Thursday training session and we'll get you kicking a footy within the hour.</p>
+        </div>
+        <div class="explain-card">
+          <h3>A club, not just a team</h3>
+          <p>The Lions have sent multiple players to the U.S.A. Revolution, the Men's National Team, over the past 15 years — and we throw one of the best socials in San Diego club sport.</p>
+        </div>
+      </div>
+      <a class="link-cta section-cta" href="#schedule">See the training schedule →</a>
+    </div>
+  </section>
+
+  <section class="social-band module module-pad on-dark" id="social">
+    <div class="wrap split">
+      <div>
+        <span class="badge marker">Est. good times, ’97</span>
+        <p class="eyebrow eyebrow-light">Off the field</p>
+        <h2>We’re a social club too.</h2>
+        <div class="rule"></div>
+        <p>Sport's not the only reason people stick around. The Lions run one of the best social calendars in San Diego club sport — Australia Day, Pie Day, the Crawfish Boil, the Flip Flop Formal, and AFL Grand Final Night, to name a few.</p>
+        <p>Come for the footy. Stay for everything else.</p>
+        <a class="btn btn-ghost on-dark section-cta" href="mailto:SanDiegoLionsAFC@gmail.com">Get in on the next one</a>
+      </div>
+      <figure class="media">
+        <img src="images/social-event.jpg" alt="Lions team and family at a club social event">
+      </figure>
+    </div>
+  </section>
+
+  <section class="band" id="schedule">
+    <div class="wrap">
+      <div class="band-head">
+        <p class="eyebrow">Training &amp; Games</p>
+        <h2>Find us on the pitch.</h2>
+      </div>
+      <div class="pitch-split">
+      <div>
+      <div class="pitch-stack">
+        <div class="schedule-card">
+          <p class="card-label">Training</p>
+          <div class="schedule-items">
+            <div class="schedule-item"><b>Days</b><span>Tuesdays &amp; Thursdays</span></div>
+            <div class="schedule-item"><b>Time</b><span>5:30 – 7:30 PM</span></div>
+            <div class="schedule-item"><b>Where</b><span>Nobel Athletic Area</span></div>
+          </div>
+        </div>
+        <!-- NEXT GAME: when a game is scheduled, fill in the details below, delete the word hidden from this card, and add hidden to the Off-season card underneath. -->
+          <div class="game-card" hidden>
+            <p class="card-label">Next game</p>
+            <h3 class="matchup">Lions <span class="vs">vs</span> [OPPONENT]</h3>
+            <div class="schedule-items">
+              <div class="schedule-item"><b>Date</b><span>[DATE]</span></div>
+              <div class="schedule-item"><b>First bounce</b><span>[TIME]</span></div>
+              <div class="schedule-item"><b>Where</b><span>[VENUE]</span></div>
+            </div>
+          </div>
+        
+        
+          <div class="game-card">
+            <p class="card-label">Next game</p>
+            <h3 class="matchup">Off-season</h3>
+            <p>The season runs April to mid-October. New fixtures go on the calendar as soon as they're confirmed.</p>
+          </div>
+        
+      </div>
+      <a class="btn btn-primary section-cta" href="schedule.html">Full calendar</a>
+      </div>
+      <figure class="media">
+        <img src="images/training-huddle.jpg" alt="Lions team huddle in maroon kit">
+      </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band legacy" id="legacy">
+    <div class="wrap split">
+      <div>
+        <img class="crest" src="images/lions-crest.png" alt="San Diego Lions club crest">
+        <p class="eyebrow">30 years of Lions footy</p>
+        <h2>Nobody gets here alone.</h2>
+        <div class="rule"></div>
+        <p>As the Lions celebrate 30 years, we know we wouldn't be anywhere without the people behind the scenes — our board — and the people who make our history rich — our life members.</p>
+      </div>
+      <div class="legacy-cards">
+        <a class="legacy-card" href="board.html">
+          <span class="card-label">Behind the scenes</span>
+          <h3>Meet the Board</h3>
+          <p>The eight volunteers who keep the club running, on the field and off it.</p>
+          <span class="link-cta">Meet the board →</span>
+        </a>
+        <a class="legacy-card" href="life-members.html">
+          <span class="card-label">Our history</span>
+          <h3>Life Members</h3>
+          <p>The 15 Lions whose years of service shaped the club we are today.</p>
+          <span class="link-cta">See the life members →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="community module module-pad on-dark" id="community">
+    <div class="wrap split">
+      <figure class="media tilt-r">
+        <img src="images/community-bbbs-clinic.jpg" alt="Lions x Big Brothers Big Sisters youth clinic">
+      </figure>
+      <div>
+        <span class="marker">We care about our community</span>
+        <p>The Lions have partnered with San Diego Big Brothers Big Sisters to bring Australian football to local youth aged 8–15, teaching fundamentals, teamwork, and the simple fact that sport is more fun when everyone gets a game.</p>
+        <p>It's how we build the next generation of players — and one of our favorite days on the calendar.</p>
+        <a class="btn btn-ghost on-dark section-cta" href="mailto:SanDiegoLionsAFC@gmail.com">Get involved</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band sponsor-strip" id="sponsors">
+    <div class="wrap">
+      <div class="band-head">
+        <p class="eyebrow">Our partners</p>
+        <h2>Thanks to all our sponsors.</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="logo-grid">
+        <div class="logo-tile"><span class="nm">MVA Design &amp; Supply</span></div>
+        <div class="logo-tile"><span class="nm">Fast Times</span></div>
+        <div class="logo-tile"><span class="nm">Sun Bum</span></div>
+        <div class="logo-tile"><span class="nm">Podium Nutrition</span></div>
+        <div class="logo-tile"><span class="nm">Destination Concepts</span></div>
+        <div class="logo-tile"><span class="nm">Blenders Eyewear</span></div>
+      </div>
+      <div class="center-cta"><a class="link-cta" href="sponsors.html">Become a sponsor →</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site" id="contact">
+  <div class="wrap">
+    <div class="foot-brand">
+      <img src="images/lions-logo.png" alt="San Diego Lions logo">
+      <span class="brand-word">SAN DIEGO LIONS</span>
+    </div>
+    <nav class="foot-links">
+      <a href="#about">About</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="#community">Community</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="contact.html">Contact</a>
+      <a href="mailto:SanDiegoLionsAFC@gmail.com">SanDiegoLionsAFC@gmail.com</a>
+    </nav>
+    <p class="foot-meta">© San Diego Lions Australian Football Club · A 501(c)3 nonprofit</p>
+  </div>
+</footer>
+</div>
+<script src="js/site.js" defer></script>
+</body>
+</html>
