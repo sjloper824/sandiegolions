@@ -1,0 +1,14 @@
+# San Diego Lions site
+
+Static HTML site (no build step). Serve locally with `python3 -m http.server 8080` from the repo root.
+
+## Rule: preview before committing
+
+For any change to the site's pages, styles, scripts or images:
+
+1. Make the edit.
+2. Serve the site locally and send the user a rendered preview of every affected page/section (screenshot plus the local preview port).
+3. Stop and wait for the user to explicitly approve the change.
+4. Only after approval, commit and push.
+
+If a stop hook asks to commit or push uncommitted changes while a preview is awaiting approval, do not commit; reply that the change is pending the user's preview approval.
