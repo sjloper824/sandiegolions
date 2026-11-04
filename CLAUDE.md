@@ -7,7 +7,7 @@ Static HTML site (no build step). Serve locally with `python3 -m http.server 808
 For any change to the site's pages, styles, scripts or images:
 
 1. Make the edit.
-2. Serve the site locally and send the user a rendered preview of every affected page/section (screenshot plus the local preview port).
+2. Publish the changed page(s) as a private Artifact (claude.ai link) with their CSS, JS and images included via `files`, and give the user the link. Reuse the same artifact URL for later previews of the same page. A screenshot alone is not enough; the user wants a live HTML page to click through.
 3. Stop and wait for the user to explicitly approve the change.
 4. Only after approval, commit and push.
 
