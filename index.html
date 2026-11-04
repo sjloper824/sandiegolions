@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>San Diego Lions AFC | Australian Football in San Diego</title>
-<meta name="description" content="The San Diego Lions are a USAFL Australian football club, est. 1997. No experience necessary: come train with us Tuesdays and Thursdays.">
+<meta name="description" content="The San Diego Lions are a USAFL Australian football club, est. 1997. No experience necessary. Training returns in March/April, Tuesdays and Thursdays.">
 <link rel="icon" type="image/png" href="images/lions-logo.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="San Diego Lions AFC | Australian Football in San Diego">
-<meta property="og:description" content="The San Diego Lions are a USAFL Australian football club, est. 1997. No experience necessary: come train with us Tuesdays and Thursdays.">
+<meta property="og:description" content="The San Diego Lions are a USAFL Australian football club, est. 1997. No experience necessary. Training returns in March/April, Tuesdays and Thursdays.">
 <meta property="og:image" content="https://sandiegolions.com/images/hero-team-nationals.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -134,6 +134,8 @@ section.band{padding-block:clamp(56px,6vw,88px)}
 .matchup{font-size:clamp(1.5rem,2.4vw,1.9rem); margin-bottom:var(--sp-3)}
 .matchup .vs{color:var(--maroon-600)}
 .game-card p{max-width:42ch}
+.schedule-card .matchup{color:#FFFFFF}
+.schedule-card p{color:rgba(255,255,255,0.78); max-width:42ch}
 .pitch-split{display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:clamp(32px,5vw,64px); align-items:center}
 .pitch-stack{display:grid; gap:var(--sp-4)}
 .pitch-stack .schedule-item{flex:1 1 140px}
@@ -309,7 +311,7 @@ footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:v
         </div>
         <div class="explain-card">
           <h3>Zero experience required</h3>
-          <p>We'll teach you the rules and the skills from scratch. Come to a Tuesday or Thursday training session and we'll get you kicking a footy within the hour.</p>
+          <p>We'll teach you the rules and the skills from scratch. When training returns in March/April, come to a Tuesday or Thursday session and we'll get you kicking a footy within the hour.</p>
         </div>
         <div class="explain-card">
           <h3>A club, not just a team</h3>
@@ -346,13 +348,19 @@ footer.site .wrap{padding-block:var(--sp-7); display:flex; flex-wrap:wrap; gap:v
       <div class="pitch-split">
       <div>
       <div class="pitch-stack">
-        <div class="schedule-card">
+        <!-- TRAINING: when the season starts, delete the word hidden from the in-season card below and add hidden to the Off-season card underneath it. -->
+        <div class="schedule-card" hidden>
           <p class="card-label">Training</p>
           <div class="schedule-items">
             <div class="schedule-item"><b>Days</b><span>Tuesdays &amp; Thursdays</span></div>
             <div class="schedule-item"><b>Time</b><span>5:30 – 7:30 PM</span></div>
             <div class="schedule-item"><b>Where</b><span>Nobel Athletic Area</span></div>
           </div>
+        </div>
+        <div class="schedule-card">
+          <p class="card-label">Training</p>
+          <h3 class="matchup">Off-season</h3>
+          <p>Training starts back up in March/April: Tuesdays &amp; Thursdays, 5:30 – 7:30 PM at Nobel Athletic Area. Email us and we'll let you know when we're back.</p>
         </div>
         <!-- NEXT GAME: when a game is scheduled, fill in the details below, delete the word hidden from this card, and add hidden to the Off-season card underneath. -->
           <div class="game-card" hidden>
