@@ -1,0 +1,24 @@
+<!-- @dsCard group="Website" height=300 subtitle="Charcoal explainer cards and white outline link cards" -->
+<meta charset="utf-8"><link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;700;800&display=swap">
+<style>
+  body{margin:0;background:var(--white);font-family:var(--font-body)}
+  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:24px}
+  .card{border-radius:var(--r-card);padding:24px 24px 26px}
+  .card::before{content:"";display:block;width:40px;height:5px;background:var(--yellow-500);margin-bottom:14px}
+  .dark{background:var(--charcoal)}
+  .dark h3{color:#FFFFFF}
+  .dark p{color:rgba(255,255,255,.78)}
+  .out{background:var(--white);border:2px solid var(--charcoal)}
+  .out h3{color:var(--ink)}
+  .out p{color:var(--ink-soft)}
+  .lbl{display:block;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--maroon-600);margin-bottom:6px}
+  h3{margin:0 0 10px;font-family:var(--font-display);font-weight:400;text-transform:uppercase;font-size:21px;line-height:1}
+  p{margin:0;font-size:13.5px;line-height:1.65}
+  .link{display:inline-block;margin-top:14px;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--maroon-600);border-bottom:3px solid var(--yellow-500);padding-bottom:2px;text-decoration:none}
+</style>
+<div class="grid">
+  <div class="card dark"><h3>No sideline to hide on</h3><p>Footy is fast-paced and physical. There's no offside and a role for every build and skill set.</p></div>
+  <div class="card dark"><h3>Zero experience required</h3><p>We'll teach you the rules and the skills from scratch.</p></div>
+  <a class="card out" href="#" style="text-decoration:none"><span class="lbl">Behind the scenes</span><h3>Meet the Board</h3><p>The eight volunteers who keep the club running.</p><span class="link">Meet the board →</span></a>
+</div>

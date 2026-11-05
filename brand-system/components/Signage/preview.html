@@ -1,0 +1,23 @@
+<!-- @dsCard group="Print" height=420 subtitle="Tent valance (10 ft × 12 in) and 3 × 6 ft banner, to scale" -->
+<meta charset="utf-8"><link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@700;800&display=swap">
+<style>
+  body{margin:0;font-family:var(--font-body)}
+  .stage{display:grid;gap:22px;padding:20px}
+  .cap{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#5B4A51;margin-bottom:6px}
+  /* valance 120 × 12 in → 840 × 84 px (7 px/in) */
+  .valance{width:840px;max-width:100%;aspect-ratio:10/1;background:#7A2A45;display:flex;align-items:center;gap:28px;padding:0 28px;box-sizing:border-box}
+  .valance img{height:70%;filter:brightness(0) invert(1)}
+  .valance span{font-family:var(--font-display);color:#FFFFFF;font-size:46px;text-transform:uppercase;letter-spacing:.02em;line-height:1}
+  /* banner 72 × 36 in → 504 × 252 px */
+  .banner{width:504px;max-width:100%;aspect-ratio:2/1;background:#FFFFFF;box-shadow:0 0 0 2px #E6DCDF;display:grid;grid-template-rows:1fr auto}
+  .banner .main{display:flex;align-items:center;gap:24px;padding:20px 28px}
+  .banner img{height:150px}
+  .banner .h{font-family:var(--font-display);text-transform:uppercase;font-size:52px;line-height:.95;color:#271B20}
+  .banner .h span{color:#7A2A45}
+  .banner .strip{background:#17110F;color:#FFFFFF;text-align:center;font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:16px;padding:10px}
+</style>
+<div class="stage" data-theme="light">
+  <div><div class="cap">Tent valance · one side</div><div class="valance"><img src="../../assets/Logos/clean-logo.png" alt="Lion lockup in white"><span>San Diego Lions</span></div></div>
+  <div><div class="cap">Vinyl banner · 3 × 6 ft</div><div class="banner"><div class="main"><img src="../../assets/Logos/clean-logo.png" alt="San Diego Lions lion lockup"><div class="h">Come play<br><span>footy.</span></div></div><div class="strip">sandiegolions.com</div></div></div>
+</div>
