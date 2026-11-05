@@ -1,0 +1,17 @@
+<!-- @dsCard group="Media" height=330 subtitle="White frame, slight tilt, real club photos only" -->
+<meta charset="utf-8"><link rel="stylesheet" href="../../tokens.css">
+<style>
+  body{margin:0;background:var(--white);font-family:var(--font-body)}
+  .wrap{display:flex;flex-wrap:wrap;gap:40px;align-items:center;padding:32px 40px}
+  figure{margin:0;width:300px;background:var(--frame);padding:12px;border-radius:var(--r-frame);box-shadow:var(--shadow-frame);transform:rotate(1.4deg)}
+  figure.l{transform:rotate(-1.2deg);width:220px}
+  figure img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-photo)}
+  figure.l img{aspect-ratio:1/1}
+  .ph{aspect-ratio:4/3;border-radius:var(--r-photo);background:var(--maroon-50);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--maroon-600);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+  .ph svg{width:30px;height:30px}
+</style>
+<div class="wrap">
+  <figure><img src="../../assets/Photos/training-huddle.jpg" alt="Lions team huddle in maroon kit"></figure>
+  <figure class="l"><img src="../../assets/Photos/community-photo.jpg" alt="Lions x Big Brothers Big Sisters youth clinic"></figure>
+  <figure class="l"><div class="ph" role="img" aria-label="Photo placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"></path><circle cx="12" cy="13" r="3.5"></circle></svg><span>Game photo</span></div></figure>
+</div>

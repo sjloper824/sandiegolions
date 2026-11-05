@@ -1,0 +1,33 @@
+<!-- @dsCard group="Print" height=600 subtitle="Letter recruitment flyer, 8.5 × 11 in (shown at 50%)" -->
+<meta charset="utf-8"><link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@500;700;800&display=swap">
+<style>
+  body{margin:0;font-family:var(--font-body)}
+  .stage{padding:20px}
+  /* 816 × 1056 = 8.5 × 11 in at 96 px/in; 24px = 0.25 in safe zone */
+  .flyer{zoom:.5;width:816px;height:1056px;background:#FFFFFF;position:relative;box-sizing:border-box;padding:48px;box-shadow:0 0 0 2px #E6DCDF;font-family:var(--font-body);color:#271B20;overflow:hidden}
+  .top{display:flex;align-items:center;gap:20px}
+  .top img{height:96px}
+  .eyebrow{font-size:15px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#7A2A45}
+  .h{font-family:var(--font-display);text-transform:uppercase;font-size:104px;line-height:.95;margin:36px 0 0;max-width:420px}
+  .h span{color:#7A2A45}
+  figure{position:absolute;right:48px;top:200px;width:300px;margin:0;background:#FFFFFF;padding:12px;border-radius:22px;box-shadow:0 14px 28px -12px rgba(23,17,15,.35);transform:rotate(1.4deg)}
+  figure img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+  .panel{position:absolute;left:48px;right:48px;top:640px;background:#17110F;border-radius:24px;padding:32px 36px;color:#FFFFFF;display:flex;gap:36px}
+  .panel b{display:block;font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#F7BC3C;margin-bottom:6px}
+  .panel span{font-family:var(--font-display);font-size:28px;text-transform:uppercase}
+  .cta{position:absolute;left:48px;top:830px;display:flex;align-items:center;gap:24px}
+  .btn{background:#F7BC3C;color:#17110F;font-weight:800;font-size:22px;letter-spacing:.06em;text-transform:uppercase;padding:18px 30px;border-radius:2px}
+  .qr{width:96px;height:96px;border:2px dashed #5B4A51;display:flex;align-items:center;justify-content:center;text-align:center;font-size:11px;font-weight:800;letter-spacing:.08em;color:#5B4A51}
+  .ft{position:absolute;left:48px;right:48px;bottom:40px;border-top:3px solid #17110F;padding-top:14px;font-size:14px;font-weight:700;color:#5B4A51}
+</style>
+<div class="stage" data-theme="light">
+  <div class="flyer">
+    <div class="top"><img src="../../assets/Logos/clean-logo.png" alt="San Diego Lions"><span class="eyebrow">San Diego Lions · Est. 1997</span></div>
+    <p class="h">Come play <span>footy.</span></p>
+    <figure><img src="../../assets/Photos/team-lineup.jpg" alt="Lions team lined up in maroon kit"></figure>
+    <div class="panel"><div><b>Days</b><span>Tue &amp; Thu</span></div><div><b>Time</b><span>5:30 – 7:30 PM</span></div><div><b>Where</b><span>Nobel Athletic Area</span></div></div>
+    <div class="cta"><span class="btn">No experience necessary</span><div class="qr">QR CODE<br>1 × 1 IN</div></div>
+    <div class="ft">sandiegolions.com · SanDiegoLionsAFC@gmail.com · A 501(c)3 nonprofit</div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<!-- @dsCard height=340 -->
+<meta charset="utf-8"><link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@500&display=swap">
+<style>
+  html,body{margin:0;background:var(--white)}
+  .cover{position:relative;width:960px;height:340px;overflow:hidden;background:var(--white)}
+  svg{position:absolute;left:0;top:0;width:960px;height:112px;display:block}
+  .blk{rx:var(--r-module);ry:var(--r-module)}
+  .blk-s{rx:var(--r-photo);ry:var(--r-photo)}
+  .m6{fill:var(--maroon-600)}
+  .m7{fill:var(--maroon-700)}
+  .ink{fill:var(--ink)}
+  .y{fill:var(--yellow-500)}
+  .text{position:absolute;left:48px;top:160px;max-width:880px}
+  .name{margin:0;font-family:var(--font-display);font-weight:400;font-size:64px;line-height:.95;color:var(--ink);text-transform:none}
+  .tag{margin:12px 0 0;font-family:var(--font-body);font-weight:500;font-size:14px;color:var(--ink-soft)}
+</style>
+<div class="cover">
+  <svg viewBox="0 0 960 112" aria-hidden="true">
+    <!-- blocks: maroon-600 520w, maroon-700 224w, ink 208w × 72h, yellow-500 96w × 48h; r-module (24) corners, r-photo (12) on the yellow, gaps sp-3 (16)
+         arrangement: a strip of unequal bands bleeding off the top edge, ink bleeding off the right, like the site's inset rounded panels
+         pattern: speed lines (stripes row) — five yellow-500 5px rules at an sp-3 pitch, staggered like the script wordmark's yellow lines and the 64 × 5 section rule
+         scales: sp-3 16 pitch and gaps, sp-5 32 / sp-6 48 insets, r-module 24 on blocks, rules squared like r-btn -->
+    <rect class="blk m6" x="0" y="-24" width="520" height="136"/>
+    <rect class="blk m7" x="536" y="-24" width="224" height="136"/>
+    <rect class="blk ink" x="776" y="-24" width="208" height="72"/>
+    <rect class="blk-s y" x="776" y="64" width="96" height="48"/>
+    <rect class="y" x="48" y="24" width="392" height="5"/>
+    <rect class="y" x="96" y="40" width="376" height="5"/>
+    <rect class="y" x="64" y="56" width="424" height="5"/>
+    <rect class="y" x="112" y="72" width="360" height="5"/>
+    <rect class="y" x="80" y="88" width="296" height="5"/>
+  </svg>
+  <div class="text">
+    <p class="name">San Diego Lions<br>Brand System</p>
+    <p class="tag">Welcoming to first-timers, a bit cheeky, serious about footy.</p>
+  </div>
+</div>

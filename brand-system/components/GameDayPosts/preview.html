@@ -1,0 +1,55 @@
+<!-- @dsCard group="Social" height=470 subtitle="Next game and Result, 1080 × 1350 feed posts (shown at 30%)" -->
+<meta charset="utf-8"><link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@500;700;800&display=swap">
+<style>
+  body{margin:0;font-family:var(--font-body)}
+  .row{display:flex;flex-wrap:wrap;gap:24px;padding:20px}
+  .post{zoom:.3;width:1080px;height:1350px;position:relative;overflow:hidden;box-sizing:border-box;padding:60px;font-family:var(--font-body);box-shadow:0 0 0 3px #E6DCDF}
+  .logo{height:100px;display:block}
+  .ko{filter:brightness(0) invert(1)}
+  .eyebrow{font-size:26px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+  .h{font-family:var(--font-display);text-transform:uppercase;line-height:.95;margin:0}
+  /* Next game */
+  .next{background:#FFFFFF}
+  .next figure{position:absolute;top:60px;right:60px;width:520px;margin:0;background:#FFFFFF;padding:20px;border-radius:33px;box-shadow:0 20px 40px -16px rgba(23,17,15,.35);transform:rotate(1.5deg)}
+  .next figure img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px}
+  .next .panel{position:absolute;left:60px;right:60px;bottom:60px;background:#5F2037;border-radius:36px;padding:56px 60px;color:#FFFFFF}
+  .next .eyebrow{color:#F7BC3C;margin-bottom:18px}
+  .next .h{font-size:132px}
+  .next .h span{color:#F7BC3C}
+  .details{display:flex;gap:48px;margin-top:40px}
+  .details b{display:block;font-size:22px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#F7BC3C;margin-bottom:8px}
+  .details span{font-family:var(--font-display);font-size:44px;text-transform:uppercase}
+  /* Result */
+  .result{background:#17110F;color:#FFFFFF}
+  .result .top{display:flex;justify-content:space-between;align-items:flex-start}
+  .tag{display:inline-block;background:#F7BC3C;color:#17110F;font-family:var(--font-display);font-size:64px;padding:8px 32px;border-radius:3px;text-transform:uppercase}
+  .result .eyebrow{color:#F7BC3C;margin:120px 0 30px}
+  .score{display:grid;grid-template-columns:1fr auto;align-items:baseline;border-top:4px solid rgba(255,255,255,.25);padding:28px 0}
+  .score .h{font-size:92px}
+  .score .n{font-family:var(--font-display);font-size:92px;font-variant-numeric:tabular-nums}
+  .score.us .h,.score.us .n{color:#FFFFFF}
+  .score.them .h,.score.them .n{color:rgba(255,255,255,.6)}
+  .goals{margin-top:44px;font-size:30px;line-height:1.5;color:rgba(255,255,255,.85)}
+  .goals b{display:block;font-size:22px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#F7BC3C}
+  .bar{position:absolute;left:0;right:0;bottom:0;height:24px;background:#7A2A45}
+</style>
+<div class="row" data-theme="light">
+  <div class="post next">
+    <img class="logo" src="../../assets/Logos/clean-logo.png" alt="San Diego Lions">
+    <figure><img src="../../assets/Photos/game-onfield.jpg" alt="Lions player in a contest on the field"></figure>
+    <div class="panel">
+      <div class="eyebrow">Next game · Round [X]</div>
+      <p class="h">Lions <span>vs</span><br>[Opponent]</p>
+      <div class="details"><div><b>Date</b><span>Sat [DD MMM]</span></div><div><b>First bounce</b><span>[Time]</span></div><div><b>Where</b><span>[Venue]</span></div></div>
+    </div>
+  </div>
+  <div class="post result">
+    <div class="top"><img class="logo ko" src="../../assets/Logos/clean-logo.png" alt="San Diego Lions"><span class="tag">Win</span></div>
+    <div class="eyebrow">Full time · Round [X]</div>
+    <div class="score us"><p class="h">Lions</p><span class="n">8.6 (54)</span></div>
+    <div class="score them"><p class="h">[Opponent]</p><span class="n">5.4 (34)</span></div>
+    <div class="goals"><b>Goals</b>[Name] 3, [Name] 2, [Name] 2</div>
+    <div class="bar"></div>
+  </div>
+</div>
